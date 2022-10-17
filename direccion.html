@@ -8,10 +8,47 @@
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
 </head>
 <body>
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Ingrese la Direccion</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">RECLAMEX</a>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">¿Qué es este sitio?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">¿Como realizo el reclamo?</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="row col-12" style="margin-top: 10px">
+        <div class="row col-4" style="margin-left: 5px">
+            <h3>Complete los datos:</h3>
+        </div>
+        <div class="row col-4">
+            <div class="col-12 text-center" style="margin-top:20px">
+                <ul class="form-label">Nombre y apellido</ul>
+                <input id="email" type="text" class="form-control" placeholder="Nombre Apellido">
+            </div><br>
+            <div class="col-12 text-center" style="margin-top:20px">
+                <ul class="form-label">Dirección de email</ul>
+                <input id="nombre" type="email" class="form-control" placeholder="nombre@ejemplo.com">
+            </div>
+            <div class="col-12 text-center" style="margin-top:20px">
+                <ul class="form-label">Teléfono</ul>
+                <input id="nombre" type="number" class="form-control" placeholder="+5429909876543">
+            </div>
+            <div class="col-12 text-center" style="margin-top:20px">
+                <ul class="form-label">Reclamo</ul>
+                <textarea class="form-control" style="height: 111px;" placeholder="Escriba su reclamo"></textarea>
+            </div>
+            <div class="text-center" style="margin-top: 20px; margin-bottom: 35px;">
+                <button type="button" class="btn btn-outline-success btn-sm col-6">Enviar</button>
+            </div>
+        </div>
+    </div>
       
 </body>
 </html>
