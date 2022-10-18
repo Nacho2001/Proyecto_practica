@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <title>Reclamex</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">RECLAMEX</a>
+          <a class="navbar-brand" href="../index.html">RECLAMEX</a>
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
@@ -30,18 +30,31 @@
         <div class="row col-4">
             <div class="col-12 text-center" style="margin-top:20px">
                 <ul class="form-label">Nombre y apellido</ul>
-                <input id="email" type="text" class="form-control" placeholder="Nombre Apellido">
+                <input id="email" type="text" class="form-control" placeholder="Nombre Apellido" required>
             </div><br>
             <div class="col-12 text-center" style="margin-top:20px">
                 <ul class="form-label">Dirección de email</ul>
-                <input id="nombre" type="email" class="form-control" placeholder="nombre@ejemplo.com">
+                <input id="nombre" type="email" class="form-control" placeholder="nombre@ejemplo.com" required>
             </div>
             <div class="col-12 text-center" style="margin-top:20px">
                 <ul class="form-label">Teléfono</ul>
-                <input id="nombre" type="number" class="form-control" placeholder="+5429909876543">
+                <input id="nombre" type="number" class="form-control" placeholder="+5429909876543" required>
             </div>
             <div class="col-12 text-center" style="margin-top:20px">
-                <ul class="form-label">Reclamo</ul>
+              <ul class="form-label">Indique el sector donde falla el alumbrado</ul>
+              <input id="sector" type="text" class="form-control" placeholder="Ej: Barrio San Pablo" required>
+          </div>
+          <div class="col-12 text-center" style="margin-top:20px">
+            <ul>Especifique el problema</ul>
+            <select class="form-select" required>
+              <option>El alumbrado no funciona en todo el sector</option>
+              <option>El servicio esta siendo afectados por el clima</option>
+              <option>El servicio solamente presenta fallos en un area determinada</option>
+              <option>Otro</option>
+            </select>
+          </div>
+            <div class="col-12 text-center" style="margin-top:20px">
+                <ul class="form-label">Descripcion (opcional)</ul>
                 <textarea class="form-control" style="height: 111px;" placeholder="Escriba su reclamo"></textarea>
             </div>
             <div class="text-center" style="margin-top: 20px; margin-bottom: 35px;">
