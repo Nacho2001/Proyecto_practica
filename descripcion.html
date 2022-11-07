@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reclamex</title>
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="main.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">RECLAMEX</a>
-      <div class="collapse navbar-collapse" id="navbarColor02">
+      <div class="collapse navbar-collapse">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
             <a class="nav-link" href="about.html">Informacion</a>
@@ -20,36 +21,40 @@
       </div>
     </div>
   </nav>
-    <div class="row col-12" style="margin-top: 10px">
+    <div class="row col-12" style="margin-top: 1%">
         <div class="row col-md-4 col-sm-2" style="margin-left: 1%">
           <h3>Complete los datos:</h3><!-- Texto de referencia-->
         </div><br>
         <div class="row col-md-4 col-sm-2"> <!-- Row que contiene los datos que se deben ingresar-->
           <div class="col-12 text-center" style="margin-top: 7%;"> <!-- label e input para ingresar nombre-->
             <ul class="form-label">Nombre y apellido</ul>
-            <input id="email" type="text" class="form-control" placeholder="Nombre Apellido" required>
+            <input id="nombre" type="text" class="form-control" placeholder="Nombre Apellido" required>
           </div><br>
           <div class="col-12 text-center" style="margin-top: 5%"> <!-- label e input para ingresar email-->
             <ul class="form-label">Dirección de email</ul>
-            <input id="nombre" type="email" class="form-control" placeholder="nombre@ejemplo.com" required>
+            <input id="email" type="email" class="form-control" placeholder="nombre@ejemplo.com" required>
           </div>
           <div class="col-12 text-center" style="margin-top: 5%"> <!-- label e input para ingresar telefono-->
             <ul class="form-label">Teléfono</ul>
-            <input id="nombre" type="number" class="form-control" placeholder="+5429909876543" required>
+            <input id="telefono" type="number" class="form-control" placeholder="+5429909876543" required>
           </div>
           <div class="col-12 text-center" style="margin-top: 5%">
             <ul class="form-label">Ubicacion del problema</ul> <!-- label e input para ingresar ubicacion-->
             <input id="sector" type="text" class="form-control" placeholder="Ej: Barrio San Pablo" required>
           </div>
+          <div class="col-12 text-center" style="margin-top: 5%">
+            <ul class="form-label">Tipo de reclamo</ul>
+            <select class="form-select" id="tipo" value='${categoria}' disabled></select>
+          </div>
           <div class="col-12 text-center" style="margin-top: 5%"> <!-- label e input para ingresar descripcion-->
             <ul class="form-label">Descripcion</ul>
-            <textarea class="form-control" style="height: 60%;" placeholder="Escriba su reclamo"></textarea>
+            <textarea id="descripcion" class="form-control" style="height: 60%;" placeholder="Escriba su reclamo"></textarea>
           </div>
           <div class="text-center" style="margin-top: 20px; margin-bottom: 35px;">
-            <button type="button" class="btn btn-success col-6">Enviar</button> <!-- boton que carga los datos -->
+            <button type="button" onclick="principal()" class="btn btn-success col-6">Enviar</button> <!-- boton que carga los datos -->
           </div>
         </div>
     </div>
-      
+  
 </body>
 </html>
