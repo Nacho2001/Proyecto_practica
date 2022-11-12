@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RECLAMEX</title>
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
-    <script src="./main.js"></script>
 </head>
 <body >
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!--Barra de navegacion-->
@@ -42,6 +41,28 @@
     </a> <!-- Los reclamos ahora se realizan desde descripcion.html, de acuerdo al boton, la aporta un valor 
     diferente a la propiedad categoria de cada objeto (el reclamo)-->
   </div>
+  <script>
+    let categoria;
+    function def_alumbrado(){
+    categoria = "alumbrado"
+    }
+    function def_bacheo(){
+    categoria = "bacheo"
+    }
+    function def_r_ramas(){
+    categoria = "r_ramas"
+    }
+    function def_r_residuos(){
+    categoria = "r_residuos"
+    }
+    function def_mantenimiento(){
+    categoria = "mantenimiento"
+    }
+    function def_otro(){
+    categoria = "otro"
+    }
+    export default categoria
+  </script>
 </body>
 
 </html>
