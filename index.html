@@ -21,48 +21,26 @@
   </div>
 </nav>
   <div class="row col-12 text-center"> <!--Columna que contiene los botones-->
-    <a style="margin-top: 2%" href="descripcion.html"> <!-- Boton hacia el reclamo alumbrado-->
-      <button class="btn btn-lg btn-primary col-sm-11 col-md-3" type="button" onclick="def_alumbrado()">Alumbrado</button>
+    <a style="margin-top: 2%" href="accion.html"> <!-- Boton hacia el reclamo alumbrado-->
+      <button class="btn btn-lg btn-primary col-sm-11 col-md-3" type="button">Alumbrado</button>
     </a>
-    <a style="margin-top: 2%;" href="descripcion.html"> <!-- Boton hacia reclamo de bacheo-->
-      <button class="btn btn-lg btn-primary col-sm-11 col-md-3" type="button" onclick="def_bacheo()">Bacheo</button>
+    <a style="margin-top: 2%;" href="accion.html"> <!-- Boton hacia reclamo de bacheo-->
+      <button class="btn btn-lg btn-primary col-sm-11 col-md-3" type="button">Bacheo</button>
     </a>
-    <a style="margin-top: 2%;" href="descripcion.html"> <!-- Boton de acceso a Recolecion de ramas-->
-      <button class="btn btn-lg btn-primary col-sm-11 col-md-3" type="button" onclick="def_r_ramas()">Recoleccion de Ramas</button>
+    <a style="margin-top: 2%;" href="accion.html"> <!-- Boton de acceso a Recolecion de ramas-->
+      <button class="btn btn-lg btn-primary col-sm-11 col-md-3" type="button">Recoleccion de Ramas</button>
     </a>
-    <a style="margin-top: 2%;" href="descripcion.html"><!-- Boton hacia recoleccion de residuos-->
-      <button class="btn btn-lg btn-primary col-sm-11 col-md-3" type="button" onclick="def_r_residuos()">Recoleccion de Residuos</button>
+    <a style="margin-top: 2%;" href="accion.html"><!-- Boton hacia recoleccion de residuos-->
+      <button class="btn btn-lg btn-primary col-sm-11 col-md-3" type="button">Recoleccion de Residuos</button>
     </a>
-    <a style="margin-top: 2%;" href="descripcion.html"> <!--Boton de manteniemiento-->
-      <button class="btn btn-lg btn-primary col-sm-11 col-md-3" type="button" onclick="def_mantenimiento()">Manteniemiento de calles</button>
+    <a style="margin-top: 2%;" href="accion.html"> <!--Boton de manteniemiento-->
+      <button class="btn btn-lg btn-primary col-sm-11 col-md-3" type="button">Manteniemiento de calles</button>
     </a>
-    <a style="margin-top: 2%;" href="descripcion.html"> <!--Boton de reclamo sin categoria-->
-      <button class="btn btn-lg btn-primary col-sm-11 col-md-3" type="button" onclick="def_otro()">Otros</button>
+    <a style="margin-top: 2%;" href="accion.html"> <!--Boton de reclamo sin categoria-->
+      <button class="btn btn-lg btn-primary col-sm-11 col-md-3" type="button">Otros</button>
     </a> <!-- Los reclamos ahora se realizan desde descripcion.html, de acuerdo al boton, la aporta un valor 
     diferente a la propiedad categoria de cada objeto (el reclamo)-->
   </div>
-  <script>
-    let categoria;
-    function def_alumbrado(){
-    categoria = "alumbrado"
-    }
-    function def_bacheo(){
-    categoria = "bacheo"
-    }
-    function def_r_ramas(){
-    categoria = "r_ramas"
-    }
-    function def_r_residuos(){
-    categoria = "r_residuos"
-    }
-    function def_mantenimiento(){
-    categoria = "mantenimiento"
-    }
-    function def_otro(){
-    categoria = "otro"
-    }
-    export default categoria
-  </script>
 </body>
 
 </html>
