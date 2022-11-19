@@ -20,29 +20,29 @@
       </div>
     </div>
   </nav>
-  <div id="formulario" class="row col-12" style="margin-top: 10px">
+  <div id="formulario" class="row col-12" style="margin-top: 10px"><!--Div contenedor-->
       <div class="row col-4" style="margin-left: 5px">
-        <h3>Complete los datos:</h3>
+        <h3>Complete los datos:</h3><!-- texto indicativo-->
       </div>
       <div class="row col-4">
         <div class="col-12 text-center" style="margin-top:20px">
-          <ul class="form-label">Nombre y apellido</ul>
+          <ul class="form-label">Nombre y apellido</ul> <!--Campo nombre-->
           <input id="nombre" type="text" class="form-control" placeholder="Nombre Apellido" required>
         </div><br>
         <div class="col-12 text-center" style="margin-top:20px">
-          <ul class="form-label">Dirección de email</ul>
+          <ul class="form-label">Dirección de email</ul> <!-- Campo email-->
           <input id="email" type="email" class="form-control" placeholder="nombre@ejemplo.com" required>
         </div>
         <div class="col-12 text-center" style="margin-top:20px">
-          <ul class="form-label">Teléfono</ul>
+          <ul class="form-label">Teléfono</ul> <!-- Campo te´lefono-->
           <input id="telefono" type="number" class="form-control" placeholder="+5429909876543" required>
         </div>
         <div class="col-12 text-center" style="margin-top:20px">
-          <ul class="form-label">Indique el sector donde falla el alumbrado</ul>
+          <ul class="form-label">Indique el sector donde falla el alumbrado</ul> <!--Campo sector-->
           <input id="sector" type="text" class="form-control" placeholder="Ej: Barrio San Pablo" required>
         </div>
         <div class="col-12 text-center" style="margin-top:20px">
-          <div class="col-12 text-center" style="margin-top: 5%">
+          <div class="col-12 text-center" style="margin-top: 5%"> <!--Select de categoria-->
             <ul class="form-label">Tipo de reclamo</ul>
             <select class="form-select" id="categoria">
               <option value="R. ramas">Recoleccion de ramas</option>
@@ -53,17 +53,17 @@
               <option value="Otros">Otros</option>
             </select>`
           </div>
-        <div class="col-12 text-center" style="margin-top:20px">
+        <div class="col-12 text-center" style="margin-top:20px"> <!-- textarea para decrpcion-->
           <ul class="form-label">Descripcion (opcional)</ul>
           <textarea id="descripcion" class="form-control" style="height: 111px;" placeholder="Escriba su reclamo"></textarea>
         </div>
         <div class="text-center" style="margin-top: 20px; margin-bottom: 35px;">
           <button type="button" class="btn btn-outline-success btn-sm col-6" onclick="principal()">Enviar</button>
-        </div>
+        </div> <!-- Boton para cargar reclamo-->
       </div>
     </div>
   </div>
-  <div id="tabla" class="row col-12 text-center" style="margin-top: 10px" hidden>
+  <div id="tabla" class="row col-12 text-center" style="margin-top: 10px" hidden> <!-- Informe oculto, se muestra al finalizar-->
     <div class="row col-12" >
       <h2>Informe</h2>
     </div>
@@ -72,7 +72,7 @@
     </div>
     <div>
       <table class="table" id="tabla_body">
-        <thead>
+        <thead><!-- Tabla con reclamos realizados-->
           <tr>
             <th scope="col">Categoria</th>
             <th scope="col">Sector</th>
